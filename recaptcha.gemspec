@@ -14,12 +14,13 @@ Gem::Specification.new do |s|
 
   s.files       = `git ls-files lib README.md CHANGELOG.md LICENSE`.split("\n")
 
-  s.add_runtime_dependency "json"
+  s.add_runtime_dependency "json", '~> 2.3.0'
   s.add_development_dependency "mocha"
   s.add_development_dependency "rake"
   s.add_development_dependency "i18n"
   s.add_development_dependency "maxitest"
   s.add_development_dependency "pry-byebug"
+  s.add_development_dependency "byebug", '~> 11.1.3'
   s.add_development_dependency "bump"
   s.add_development_dependency "webmock"
   s.add_development_dependency "rubocop"
